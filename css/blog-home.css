@@ -1,0 +1,422 @@
+@import url("blog-home-rsp.css");
+
+/* Genel CSS */
+
+body {
+  padding: 0;
+  margin: 0 4rem;
+  background-color: #efefef;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Genel CSS Sonu*/
+
+/* Sectionlar CSS */
+
+header {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: #ffff;
+  color: #29a060;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 1.2rem;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.side-sections {
+  width: 25%;
+  color: #29a060;
+}
+
+.main-sections {
+  width: 74%;
+  margin-left: 1rem;
+}
+
+footer {
+  border-radius: 1rem;
+  background-color: #ffff;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  color: #29a060;
+  padding: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Sectionlar CSS Sonu */
+
+/* Side Sectionlar CSS */
+/* Blog Kategorileri CSS */
+
+.blog-categories {
+  border-radius: 1rem;
+  color: #29a060;
+  background-color: #ffff;
+  padding: 0.5rem 1.3rem;
+}
+
+.blog-categories h2 {
+  padding-top: 1rem;
+}
+
+.categories-arrow {
+  display: none;
+}
+
+.blog-categories ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+.blog-categories ul li {
+  margin-bottom: 0.4rem;
+  position: relative;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-categories ul li::before {
+  margin-left: 0.5rem;
+  content: "•";
+  color: #29a060;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.blog-categories ul li a {
+  color: #29a060;
+  text-decoration: none;
+}
+
+.blog-categories ul li a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.blog-categories ul li span {
+  color: #ffff;
+  background-color: #29a060;
+  text-align: center;
+  border-radius: 20%;
+  padding: 0 0.2rem;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+/* Blog Kategorileri CSS Sonu */
+
+/* Trend Haberler CSS */
+
+.trend-news {
+  border-radius: 1rem;
+  color: #29a060;
+  background-color: #ffff;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.trend-news-title {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trend-news-arrows {
+  margin-left: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.trend-news-arrows i {
+  cursor: pointer;
+}
+
+.trend-news-arrows i:hover {
+  scale: 1.2;
+}
+
+.trend-news-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.625rem;
+  padding-top: 0.625rem;
+}
+
+.trend-news-content-item {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  cursor: pointer;
+}
+
+.trend-news-content-item:hover {
+  scale: 1.1;
+}
+
+.trend-news-content-item img {
+  width: 30%;
+  border-radius: 1rem;
+}
+
+.trend-news-content-item-details {
+  font-size: 0.9rem;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.trend-news-content-item-details .date {
+  font-size: 0.8rem;
+  color: #8b8a8a;
+}
+
+.trend-news-content-item-details .views {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #29a060;
+}
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  display: inline-block;
+}
+
+.trend-news-dots .dot:hover {
+  background-color: #29a060;
+  cursor: pointer;
+}
+
+.trend-news-dots .active {
+  background-color: #29a060;
+}
+
+/* Trend Haberler CSS Sonu */
+
+/* Etiketler CSS */
+
+.tags {
+  border-radius: 1rem;
+  color: #29a060;
+  background-color: #ffff;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tags h2 {
+  margin-bottom: 1rem;
+}
+
+.single-tag {
+  border: 0.063rem solid #8b8a8a;
+  display: inline-block;
+  color: #8b8a8a;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.single-tag:hover {
+  background-color: #29a060;
+  color: #ffff;
+  cursor: pointer;
+}
+
+/* Etiketler CSS Sonu */
+
+/* Banner Alanı CSS */
+
+.banner-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  color: #29a060;
+  background-color: #ffff;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  height: 30rem;
+}
+
+/* Banner Alanı CSS Sonu */
+/* Side Sectionlar CSS Sonu */
+
+/* Main Sectionlar CSS */
+/* Main Blog İtem CSS */
+
+.main-blog-item {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 1rem;
+  background-color: #ffff;
+  padding: 1.7rem;
+}
+
+.main-blog-item img {
+  width: 33%;
+  border-radius: 1rem;
+}
+
+.main-blog-item-details {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.main-blog-item-details-content p {
+  color: #8b8a8a;
+}
+
+.main-blog-item-details-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8b8a8a;
+}
+
+.read-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 0.125rem solid #29a060;
+  color: #29a060;
+  border-radius: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #ffff;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #29a060;
+  color: #ffff;
+}
+
+/* Main Blog İtem CSS Sonu */
+
+/* All Blogs ve Blog Card CSS */
+
+.all-blogs {
+  background-color: #ffff;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-card {
+  border: 0.125rem solid #29a060;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 25%;
+}
+
+.blog-card img {
+  border-radius: 1rem;
+}
+
+.blog-card-tag {
+  font-size: 0.7rem;
+  color: #ffff;
+  background-color: #8b8a8a;
+  width: fit-content;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+.blog-card-details-content p {
+  font-size: 0.8rem;
+  color: #8b8a8a;
+}
+
+.blog-card-details-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8b8a8a;
+  margin-top: 1rem;
+  font-size: 0.7rem;
+}
+
+.blog-card-details-footer .read-more-btn {
+  background-color: #ffff;
+  border: 0.125rem solid #29a060;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.65rem;
+  cursor: pointer;
+}
+
+/* Load More CSS */
+
+.load-more {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  justify-content: center;
+  background-color: #ffff;
+}
+
+.load-more-btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 3rem;
+  color: #29a060;
+  border: 0.15rem solid #29a060;
+  background-color: #ffff;
+  padding: 1.2rem 3rem;
+  cursor: pointer;
+}
+
+.load-more-btn:hover {
+  background-color: #29a060;
+  color: #ffff;
+}
+
+/* Load More CSS Sonu */
+/* All Blogs ve Blog Card CSS Sonu*/
+/* Main Sectionlar CSS Sonu */

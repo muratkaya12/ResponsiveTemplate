@@ -1,0 +1,382 @@
+/* Küçük ekranlar için */
+@media (max-width: 769px) {
+
+    /* Genel CSS */
+
+    body {
+        width: auto;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .blog-categories,
+    .trend-news,
+    .main-blog-item,
+    .all-blogs,
+    .banner-side {
+        border-radius: 0 !important;
+        padding: 1rem !important;
+    }
+
+    /* Genel CSS Sonu*/
+
+    /* Sectionlar CSS */
+
+    header {
+        font-size: .7rem !important;
+        gap: 1rem;
+        padding: 1rem !important;
+        margin: 0 !important;
+    }
+
+    main {
+        flex-direction: column !important;
+        display: flex !important;
+        height: 40%;
+    }
+
+    .side-sections {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+    .main-sections {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    footer {
+        margin: 0 !important;
+        border-radius: 0 !important;
+        padding: 5rem 1rem !important;
+    }
+
+    /* Sectionlar CSS Sonu */
+
+    /* Side Sectionlar CSS */
+    /* Blog Kategorileri CSS */
+
+    .blog-categories {
+        margin-top: 1.5rem !important;
+    }
+
+    .blog-categories-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .blog-categories h2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem 0;
+        cursor: pointer;
+    }
+
+    .categories-arrow {
+        margin-left: .5rem;
+        font-size: 1.5rem;
+        display: block !important;
+    }
+
+    .blog-categories ul {
+        display: none;
+    }
+
+    /* Blog Kategorileri CSS Sonu */
+
+    /* Trend Haberler CSS */
+
+    .trend-news-title {
+        margin-bottom: 2rem !important;
+    }
+
+    .trend-news-arrows {
+        margin-left: 0 !important;
+    }
+
+    .trend-news-content-item:nth-child(n+3) {
+        display: none;
+    }
+
+    .trend-news-content-item {
+        flex-direction: column;
+        align-items: center !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .trend-news-content-item img {
+        width: 60% !important;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Trend Haberler CSS Sonu */
+
+    /* Etiketler ve Banner Alanı CSS */
+
+    .tags {
+        display: none !important;
+    }
+
+    .banner-side {
+        display: none !important;
+    }
+
+    /* Etiketler ve Banner Alanı CSS Sonu */
+    /* Side Sectionlar CSS Sonu */
+
+    /* Main Sectionlar CSS */
+    /* Main Blog İtem CSS */
+
+    .main-blog-item {
+        flex-direction: column;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .main-blog-item img {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+    .main-blog-item-details p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+    }
+
+    .main-blog-item-details-footer {
+        gap: .5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Main Blog İtem CSS Sonu */
+
+    /* All Blogs ve Blog Card CSS */
+
+    .blog-card {
+        width: 80% !important;
+    }
+
+    .blog-card:nth-child(n+3) {
+        display: none;
+    }
+
+    .blog-card p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .blog-card-details-footer {
+        text-align: center;
+        gap: 1.1rem !important;
+    }
+
+    .load-more {
+        border-radius: 0 !important;
+    }
+
+    .load-more-btn {
+        font-size: .7rem !important;
+        margin-top: .5rem !important;
+    }
+
+    /* All Blogs ve Blog Card CSS Sonu*/
+    /* Main Sectionlar CSS Sonu */
+
+}
+
+/* Orta ekranlar için */
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    /* Genel CSS */
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 1rem;
+    }
+
+    .blog-categories,
+    .trend-news,
+    .main-blog-item,
+    .all-blogs,
+    .banner-side {
+        padding: 1.5rem !important;
+    }
+
+    /* Genel CSS Sonu */
+
+    /* Sectionlar CSS */
+
+    header {
+        margin: 0 !important;
+        margin-bottom: 1rem !important;
+        font-size: 0.9rem !important;
+        padding: 1.5rem !important;
+    }
+
+    main {
+        margin: 0 .7rem;
+        flex-direction: row !important;
+        display: flex !important;
+        justify-content: space-between;
+    }
+
+    .side-sections {
+        width: 30% !important;
+    }
+
+    .main-sections {
+        width: 69% !important;
+    }
+
+    footer {
+        padding: 3rem 2rem !important;
+    }
+
+    /* Sectionlar CSS Sonu */
+
+    /* Side Sectionlar CSS */
+    /* Blog Kategorileri CSS */
+
+    .blog-categories {
+        padding: .3rem 1.4rem !important;
+        margin-top: 0 !important;
+    }
+
+    .blog-categories-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .blog-categories h2 {
+        justify-content: space-between;
+        font-size: 1.2rem !important;
+    }
+
+    /* Blog Kategorileri CSS Sonu */
+
+    /* Trend Haberler CSS */
+
+    .trend-news-title {
+        gap: 1rem !important;
+        flex-direction: column !important;
+        font-size: .9rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .trend-news-arrows {
+        margin-left: 0 !important;
+    }
+
+    .trend-news-content-item:nth-child(n+4) {
+        display: none;
+    }
+
+    .trend-news-content-item {
+        gap: 0 !important;
+        flex-direction: column;
+        align-items: center !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .trend-news-content-item img {
+        width: 65% !important;
+        margin-bottom: 1rem;
+    }
+
+    /* Trend Haberler CSS Sonu */
+
+    /* Etiketler ve Banner Alanı CSS */
+
+    .tags {
+        text-align: center;
+        border-radius: 1rem;
+        color: #29A060;
+        background-color: #ffff;
+        padding: 1rem !important;
+        margin-top: 1rem;
+    }
+
+    .banner-side {
+        height: 18rem !important;
+    }
+
+    /* Etiketler ve Banner Alanı CSS Sonu */
+    /* Side Sectionlar CSS Sonu */
+
+    /* Main Sectionlar CSS */
+    /* Main Blog İtem CSS */
+
+    .main-blog-item {
+        flex-direction: column;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .main-blog-item img {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+    .main-blog-item-details p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .main-blog-item-details-footer {
+        gap: .5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Main Blog İtem CSS Sonu */
+
+    /* All Blogs ve Blog Card CSS */
+
+    .blog-card {
+        width: 35% !important;
+    }
+
+    .blog-card:nth-child(n+7) {
+        display: none;
+    }
+
+    .blog-card p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .blog-card-details-footer {
+        text-align: center;
+        gap: 0.8rem !important;
+    }
+
+    .load-more {
+        border-radius: 0 !important;
+    }
+
+    .load-more-btn {
+        margin-top: 0.7rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    /* All Blogs ve Blog Card CSS Sonu */
+    /* Main Sectionlar CSS Sonu */
+
+}
